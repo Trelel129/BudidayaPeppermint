@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="switch.js"></script>
+    <title>Sensor Stroberi</title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a>Sensor</a>
+      </li>
+      <table>
+        <tr>
+          <th>
+            <a>Kelembapan (RH)</a>
+          </th>
+          <th>
+            <a>Suhu (°C)</a>
+          </th>
+          <th>
+            <a>Ultrasonik (cm)</a>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <a>10</a>
+          </td>
+          <td>
+            <a>30</a>
+          </td>
+          <td>
+            <input
+              onclick="Ultrasonic()"
+              type="number"
+              step="5"
+              value="0"
+              id="Ultrasonic"
+              min="0"
+              max="400"
+            />
+          </td>
+        </tr>
+      </table>
+      <li>
+        <a href="#">Input</a>
+      </li>
+      <table>
+        <tr>
+          <th>
+            <a>Pendingin</a>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <!-- on off button -->
+            <div class="onoffswitch">
+              <input
+                onclick="Pendingin()"
+                type="checkbox"
+                name="onoffswitch"
+                class="a onoffswitch-checkbox"
+                id="myonoffswitch"
+              />
+              <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+              </label>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <!-- if theNumber >= 20, display something -->
+      <div id="Panen" style="display: none">
+        <p class="whtext">Sudah siap panen!</p>
+      </div>
+      <div id="Dingin" style="display: none">
+        <p class="whtext">Pendingin Nyala</p>
+      </div>
+      <!-- console.log(theNumber) -->
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+body {
+  font-size: 28px;
+}
+#Ultrasonic {
+  width: auto;
+  height: auto;
+}
+input {
+  width: 20px;
+  height: 20px;
+  font-size: 28px;
+  border: none;
+  background: none;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+.lalign {
+  float: right;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4caf50;
+}
+
+p {
+  font-size: 22px;
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+.body {
+  opacity: 0.85;
+  background-color: #ffff;
+  padding: 20px;
+  margin-top: 55px;
+  height: auto;
+  z-index: -1;
+}
+th a {
+  text-decoration: none;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+table,
+th,
+td,
+tr {
+  border: 1px solid green;
+  border-collapse: collapse;
+  background-color: aliceblue;
+}
+th,
+td,
+tr {
+  padding: 5px;
+  width: auto + 10px;
+  text-align: center;
+}
+.whtext {
+  color: white;
+}
